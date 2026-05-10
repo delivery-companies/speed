@@ -87,11 +87,11 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <p>
-        <strong>Email:</strong> albarqiq@gmail.com
+        <strong>Email:</strong> omer.eldanin@gmail.com
       </p>
 
       <p>
-        <strong>Effective Date:</strong> 16-12-2024
+        <strong>Effective Date:</strong> 01-05-2026
       </p>
 
       <p>
