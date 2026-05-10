@@ -75,6 +75,7 @@ import { WalletsScreen } from "./screens/Wallets";
 import { useRefreshToken } from "./hooks/useRefreshToken";
 import { ForwardedToChilds } from "./screens/ForwardToChildBranchs";
 import { EditPaperOrder } from "./screens/EditPaperOrder";
+import PrivacyPolicyPage from "./screens/Privacy";
 // import { io } from "socket.io-client";
 
 function App() {
@@ -123,6 +124,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LoginScreen />} />
+      <Route path="/privacy" element={<PrivacyPolicyPage />} />
       <Route Component={PrivateRoutes}>
         {role === "ADMIN_ASSISTANT" || role === "ADMIN" ? (
           <Route element={<RolesRoute roles={["ADMIN_ASSISTANT", "ADMIN"]} />}>
