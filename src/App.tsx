@@ -216,6 +216,11 @@ function App() {
         {role === "REPOSITORIY_EMPLOYEE" ? (
           <Route element={<RolesRoute roles={["REPOSITORIY_EMPLOYEE"]} />}>
             <Route path="/treasury" element={<TreasuryScreen />} />
+            <Route path="/forwarded" element={<ForwardedOrders />} />
+            <Route
+              path="/forwarded-to-company"
+              element={<ForwardedOrdersToCompany />}
+            />
             <Route path="/repository-entries" element={<RepositoryEntries />} />
             <Route path="/repository-outputs" element={<CustomerReturns />} />
             <Route path="/repository-orders" element={<RepositoryOrders />} />
@@ -257,6 +262,11 @@ function App() {
             <Route
               path="/receipts-bulk-create"
               element={<CreateBulkReceipts />}
+            />
+            <Route path="/forwarded" element={<ForwardedOrders />} />
+            <Route
+              path="/forwarded-to-company"
+              element={<ForwardedOrdersToCompany />}
             />
             <Route path="/employees" element={<Employees />} />
             <Route path="/employees/:id/edit" element={<EditEmployee />} />
